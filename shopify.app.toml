@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "6e82c7dfd367b523a47dc68819e59169"
+name = "gsc-integrator"
+handle = "gsc-integrator-4"
+application_url = "https://becoming-quail-reasonably.ngrok-free.app"
+embedded = true
+
+[webhooks]
+api_version = "2025-07"
+
+[auth]
+redirect_urls = ["https://becoming-quail-reasonably.ngrok-free.app/auth/callback"]
+
+[access_scopes]
+scopes = "read_script_tags,write_script_tags,read_products,write_products,read_content,write_content,read_metaobject_definitions,write_metaobject_definitions,read_metaobjects,write_metaobjects"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = false
+include_config_on_deploy = true

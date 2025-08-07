@@ -39,7 +39,7 @@ if (host === "localhost") {
 
 export default defineConfig({
   server: {
-    allowedHosts: [host, "https://becoming-quail-reasonably.ngrok-free.app"],
+    allowedHosts: [host, "becoming-quail-reasonably.ngrok-free.app"],
     cors: {
       preflightContinue: true,
     },

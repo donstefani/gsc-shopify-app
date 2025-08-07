@@ -17,7 +17,7 @@ if (
   delete process.env.HOST;
 }
 
-const host = new URL(process.env.SHOPIFY_APP_URL || "http://localhost:3000")
+const host = new URL(process.env.SHOPIFY_APP_URL || "https://becoming-quail-reasonably.ngrok-free.app")
   .hostname;
 
 let hmrConfig;
@@ -39,7 +39,7 @@ if (host === "localhost") {
 
 export default defineConfig({
   server: {
-    allowedHosts: [host],
+    allowedHosts: [host, "https://becoming-quail-reasonably.ngrok-free.app"],
     cors: {
       preflightContinue: true,
     },
